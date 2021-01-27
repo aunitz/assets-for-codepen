@@ -12,67 +12,70 @@
   };
 
   callWithJQuery(function($) {
-    var esFmt, esFmtInt, esFmtPct, nf, tpl;
+    var frFmt, frFmtInt, frFmtPct, nf, tpl;
     nf = $.pivotUtilities.numberFormat;
     tpl = $.pivotUtilities.aggregatorTemplates;
-    esFmt = nf({
-      thousandsSep: ".",
+    frFmt = nf({
+      thousandsSep: " ",
       decimalSep: ","
     });
-    esFmtInt = nf({
+    frFmtInt = nf({
       digitsAfterDecimal: 0,
-      thousandsSep: ".",
+      thousandsSep: " ",
       decimalSep: ","
     });
-    esFmtPct = nf({
+    frFmtPct = nf({
       digitsAfterDecimal: 1,
       scaler: 100,
       suffix: "%",
-      thousandsSep: ".",
+      thousandsSep: " ",
       decimalSep: ","
     });
     return $.pivotUtilities.locales.es = {
       localeStrings: {
-        renderError: "Une erreur est survenue en dessinant le tableau croisé.",
-        computeError: "Une erreur est survenue en calculant le tableau croisé.",
-        uiRenderError: "Une erreur est survenue en dessinant l'interface du tableau croisé dynamique.",
-        selectAll: "Sélectionner tout",
-        selectNone: "Sélectionner rien",
-        tooMany: "(trop de valeurs à afficher)",
-        filterResults: "Filtrer les valeurs",
-        totals: "Totaux",
-        vs: "sur",
-        by: "par",
+        renderError: "Ocurrió un error durante la interpretación de la tabla dinámica.",
+        computeError: "Ocurrió un error durante el cálculo de la tabla dinámica.",
+        uiRenderError: "Ocurrió un error durante el dibujado de la tabla dinámica.",
+        selectAll: "Seleccionar todo",
+        selectNone: "Deseleccionar todo",
+        tooMany: "(demasiados valores)",
+        filterResults: "Filtrar resultados",
+        totals: "Totales",
+        vs: "vs",
+        by: "por",
         apply: "Aplicar",
         cancel: "Cancelar"
       },
       aggregators: {
-        "Nombre": tpl.count(esFmtInt),
-        "Nombre de valeurs uniques": tpl.countUnique(esFmtInt),
-        "Liste de valeurs uniques": tpl.listUnique(", "),
-        "Somme": tpl.sum(esFmt),
-        "Somme en entiers": tpl.sum(esFmtInt),
-        "Moyenne": tpl.average(esFmt),
-        "Minimum": tpl.min(esFmt),
-        "Maximum": tpl.max(esFmt),
-        "Premier": tpl.first(esFmt),
-        "Dernier": tpl.last(esFmt),
-        "Ratio de sommes": tpl.sumOverSum(esFmt),
-        "Borne supérieure 80%": tpl.sumOverSumBound80(true, esFmt),
-        "Borne inférieure 80%": tpl.sumOverSumBound80(false, esFmt),
-        "Somme en proportion du totale": tpl.fractionOf(tpl.sum(), "total", esFmtPct),
-        "Somme en proportion de la ligne": tpl.fractionOf(tpl.sum(), "row", esFmtPct),
-        "Somme en proportion de la colonne": tpl.fractionOf(tpl.sum(), "col", esFmtPct),
-        "Nombre en proportion du totale": tpl.fractionOf(tpl.count(), "total", esFmtPct),
-        "Nombre en proportion de la ligne": tpl.fractionOf(tpl.count(), "row", esFmtPct),
-        "Nombre en proportion de la colonne": tpl.fractionOf(tpl.count(), "col", esFmtPct)
+        "Cuenta": tpl.count(frFmtInt),
+        "Cuenta de valores únicos": tpl.countUnique(frFmtInt),
+        "Lista de valores únicos": tpl.listUnique(", "),
+        "Suma": tpl.sum(frFmt),
+        "Suma de enteros": tpl.sum(frFmtInt),
+        "Promedio": tpl.average(frFmt),
+        "Mediana": tpl.median(frFmt),
+        "Diferencia": tpl["var"](1, frFmt),
+        "Desviación estándar de la muestra": tpl.stdev(1, frFmt),
+        "Mínimo": tpl.min(frFmt),
+        "Máximo": tpl.max(frFmt),
+        "Primero": tpl.first(frFmt),
+        "Pasado": tpl.last(frFmt),
+        "Suma de sumas": tpl.sumOverSum(frFmt),
+        "Cota 80% superior": tpl.sumOverSumBound80(true, frFmt),
+        "Cota 80% inferior": tpl.sumOverSumBound80(false, frFmt),
+        "Proporción del total (suma)": tpl.fractionOf(tpl.sum(), "total", frFmtPct),
+        "Proporción de la fila (suma)": tpl.fractionOf(tpl.sum(), "row", frFmtPct),
+        "Proporción de la columna (suma)": tpl.fractionOf(tpl.sum(), "col", frFmtPct),
+        "Proporción del total (cuenta)": tpl.fractionOf(tpl.count(), "total", frFmtPct),
+        "Proporción de la fila (cuenta)": tpl.fractionOf(tpl.count(), "row", frFmtPct),
+        "Proporción de la columna (cuenta)": tpl.fractionOf(tpl.count(), "col", frFmtPct)
       },
       renderers: {
-        "Table": $.pivotUtilities.renderers["Table"],
-        "Table avec barres": $.pivotUtilities.renderers["Table Barchart"],
-        "Carte de chaleur": $.pivotUtilities.renderers["Heatmap"],
-        "Carte de chaleur par ligne": $.pivotUtilities.renderers["Row Heatmap"],
-        "Carte de chaleur par colonne": $.pivotUtilities.renderers["Col Heatmap"]
+        "Tabla": $.pivotUtilities.renderers["Table"],
+        "Tabla con barras": $.pivotUtilities.renderers["Table Barchart"],
+        "Heatmap": $.pivotUtilities.renderers["Heatmap"],
+        "Heatmap por filas": $.pivotUtilities.renderers["Row Heatmap"],
+        "Heatmap por columnas": $.pivotUtilities.renderers["Col Heatmap"]
       }
     };
   });
