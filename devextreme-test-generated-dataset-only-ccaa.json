@@ -1,0 +1,254 @@
+export const datos = [
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Todas las familias",
+    value: 6587
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Servicios personales, socioculturales y a la comunidad",
+    value: 2107
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Servicios a la empresa",
+    value: 7652
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Agricultura, pesca, extracción y energía",
+    value: 9726
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Comercio, transporte y reparación de vehículos",
+    value: 1260
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Construcción",
+    value: 9025
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Industria",
+    value: 2191
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Hostelería",
+    value: 9299
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Actividades sanitarias",
+    value: 4119
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Familias STEM",
+    value: 5856
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Familias Industriales",
+    value: 4297
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Familias ni Industriales ni STEM",
+    value: 4393
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Vidrio y Cerámica",
+    value: 9482
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "No distribuido por familia profesional",
+    value: 4796
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Transporte y Mantenimiento de Vehículos",
+    value: 8720
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Textil, Confección y Piel",
+    value: 7638
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Servicios Socioculturales y a la Comunidad",
+    value: 918
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Seguridad y Medio Ambiente",
+    value: 7149
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Sanidad",
+    value: 7381
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Química",
+    value: 6035
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Marítimo-Pesquera",
+    value: 9351
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Madera, Mueble y Corcho",
+    value: 1103
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Instalación y Mantenimiento",
+    value: 2925
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Informática y Comunicaciones",
+    value: 5536
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Industrias Extractivas",
+    value: 139
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Industrias Alimentarias",
+    value: 2555
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Imagen y Sonido",
+    value: 948
+  },
+  {
+    geo: "España",
+    time: "2012-2013",
+    edu_cned_14: "Total FP",
+    teaching_mode: "Todas las modalidades",
+    plan: "LOE",
+    fp_ciclos: "Imagen Personal",
+    value: 1117
+  }
+];
